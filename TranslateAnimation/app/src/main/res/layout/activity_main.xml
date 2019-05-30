@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/change"
+            android:text="CHANGE COLOURS"
+            android:paddingHorizontal="8dp"
+            android:background="#8c9eff"
+            android:layout_marginRight="16dp"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="reset"
+            android:background="#8c9eff"
+            android:text="CHOOSE"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stone1"
+            android:onClick="choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editshape1"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+
+            />
+
+        <TextView
+            android:id="@+id/stone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:onClick="choose"
+            android:background="@drawable/editshape2" />
+
+        <TextView
+            android:id="@+id/stone3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="choose"
+            android:background="@drawable/editshape3"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/stone4"
+            android:onClick="choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/editshape4"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/stone5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="choose"
+            android:background="@drawable/editshape5"
+            android:layout_marginLeft="8dp"/>
+
+
+        <TextView
+            android:id="@+id/stone6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editshape6"
+            android:clickable="true"
+            android:layout_marginLeft="8dp"
+            android:onClick="choose"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
